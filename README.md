@@ -1,19 +1,42 @@
-# Deque implementation
+# Algorithms and Data Structures
 
-Реализация структуры данных deque на Python.
+Учебный проект по структурам данных и алгоритмам на Python.
 
-## Возможности:
-- добавление элемента в начало
-- добавление элемента в конец
-- получение элемента по индексу
-- проверка переполнения
-- работа через кольцевой массив
+## Реализованные структуры данных
 
-## Используется:
-- Python
-- NumPy
+- Dynamic Array
+- Linked List
+- Deque
+- AVL Tree
 
-## Файлы:
-- deque.py — реализация структуры данных
-- deque_interface.py — интерфейс
-- test_deque.py — тестирование работы
+## Алгоритмы сортировки
+
+- Bubble Sort
+- Quick Sort
+
+## Тесты
+
+Для всех структур данных и алгоритмов написаны автоматические тесты с использованием `unittest`.
+
+Файлы тестов:
+
+- `test_dynamic_array.py`
+- `test_linked_list.py`
+- `test_deque.py`
+- `test_avl_tree.py`
+- `test_sorting.py`
+
+## CI
+
+В проекте настроен GitHub Actions.
+
+При каждом push или pull request автоматически запускаются все тесты.
+
+Workflow:
+
+`.github/workflows/ci.yml`
+
+## Запуск тестов
+
+```bash
+python -m unittest discover -v
